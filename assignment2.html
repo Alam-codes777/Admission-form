@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title> Addimition Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>College Admission Form</h1>
+        <p id="color">Fill all the details for college Addimition.</p>
+        <fieldset class="Personal">
+            <legend id="style"> Personal details </legend>
+                Full Name:-<input type="text" placeholder="Enter Your Name" name="name"required>
+                <br><br>
+                father's Name:- <input type="text" placeholder = "Enter Your Father's Name"required>
+                <br><br>
+                Email-id:-<input type="email" placeholder="Enter your Email" required />
+                <br><br>
+                Phone Number:- <input type="number" placeholder="Enter Your Phone number" maxlength="10" required>
+                <br><br>
+                Date of Birth:-<input type="date" required>
+                <br><br>
+                Password:-<input type="password" placeholder="enter password" required>
+                <p>Gender:</p>
+                <label><input type="radio" value = "male" name ="gender"required />Male </label>
+                <label><input type="radio" value="female" name ="gender"required />Female </label>
+                <label><input type="radio" value="other" name ="gender"required /> Other</label>
+                <br><br>
+                <label>Full Address:-</label>
+                <br>
+                <textarea name="address"rows="4" cols="40" placeholder="Enter your full address..."></textarea>  
+        </fieldset>
+        <fieldset class="Academic">
+            <legend id="style2"> Academic Details</legend>
+            <h4 >Slect Your Course <h4>
+                <select class="choose" required>
+                    <option value="">--Select--</option>
+                    <option value="B.tech AI/ML">B.tech AI/ML</option>
+                    <option value="B.tech CSE ">B.tech CSE </option>
+                    <option value="BBA">BBA</option>
+                    <option value="BCA">BCA</option>
+                    <option value="B.COM">B.COM</option>
+                </select>
+                <br>
+            <h4>Select Your Interests:</h4>
+                <label> <input type="checkbox" value="coding"/> coding </label>
+                <label> <input type="checkbox" value="Music"/> Music </label>
+                <label> <input type="checkbox" value="Sports"/>  sports</label>  
+                <label> <input type="checkbox" value="reading"/>  Reading </label>
+                <br><br>
+                <label type="photo" >Upload Your Photograph:</label>
+                <input type="file" name="photo" accept="image/*" required>
+                <br><br>
+                <label type="documents">Upload Supporting Documents:</label>
+                <input type="file" name="documents" accept=".pdf,.jpg,.jpeg,.png" multiple>
+                <br><br>   
+        </fieldset>
+                <input type="checkbox" id="declaration" name="declaration" required>
+                <label for="declaration">I declare that the information provided is correct.</label>
+                <br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
